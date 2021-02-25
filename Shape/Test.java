@@ -28,6 +28,7 @@ public class Test {
             } else if (choice == 0){
                 boolChoice = false;
                 scanner.close();
+                return;
             }
             Cilynder c = new Cilynder(F, 10.5);
             c.showInformation();
