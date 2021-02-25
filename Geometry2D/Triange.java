@@ -16,6 +16,6 @@ public class Triange implements Figure {
 
     @Override
     public void showInformation() {
-        System.out.println(a + "\n" + b + "\n" + c + "Площадь: " + this.calcArea());
+        System.out.println("Стороны:\n" + a + "\n" + b + "\n" + c + "\n" + "Площадь: " + this.calcArea());
     }
 }

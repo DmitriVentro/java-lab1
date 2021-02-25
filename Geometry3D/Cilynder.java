@@ -3,23 +3,18 @@ import java.util.Scanner;
 import Geometry2D.*;
 public class Cilynder {
     Figure F;
-    Double h, area;
+    Double h;
     Scanner scanner = new Scanner(System.in);
-    public Cilynder(Figure myFigure) {
+    public Cilynder(Figure myFigure, Double height) {
         F = myFigure;
-        while (h < 0) {
-        System.out.println("Введите высоту (значение больше нуля)");
-        h = scanner.nextDouble(); 
-        }
+        h = height;
     }
 
     public Double calcArea() {
-        area = F.calcArea() * h;
-        return area;
+        return F.calcArea() * h;
     }
 
     public void showInformation() {
-        System.out.println(area);
-
+        System.out.println("Позже допишу");
     }
 }
