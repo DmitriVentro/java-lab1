@@ -11,7 +11,7 @@ public class Test {
         return myFigure;
     }
 
-    public static void main(String[] args) {
+    public static void main(String...strings) {
         Scanner scanner = new Scanner(System.in);
         Integer choice;
         System.out.println("Выберите геометрическую фигуру:\n1. Круг\n2. Треугольник\n3. Прямоугольник");
