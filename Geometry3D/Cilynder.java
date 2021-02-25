@@ -1,10 +1,9 @@
 package Geometry3D;
-import java.util.Scanner;
 import Geometry2D.*;
-public class Cilynder {
+public class Cilynder implements Figure {
     Figure F;
     Double h;
-    Scanner scanner = new Scanner(System.in);
+    public String figureName = "Цилиндр";
     public Cilynder(Figure myFigure, Double height) {
         F = myFigure;
         h = height;
@@ -15,6 +14,7 @@ public class Cilynder {
     }
 
     public void showInformation() {
-        System.out.println("Позже допишу");
+        System.out.println(figureName);
+        System.out.println("\nПлощадь:\n" + this.calcArea());
     }
 }

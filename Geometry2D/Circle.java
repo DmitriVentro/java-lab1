@@ -1,21 +1,21 @@
 package Geometry2D;
 
 public class Circle implements Figure {
-    private Double r, area;
-
+    private Double r;
+    String figureName = "Круг";
     public Circle(Double radius) {
         r = radius;
     }
 
     @Override
     public Double calcArea() {
-        area = Math.PI * r * r;
-        return area;
+        return Math.PI * r * r;
     }
 
     @Override
     public void showInformation() {
-        System.out.println("Информация по шару: " + r + "\n" + "Площадь: " + area);
+        System.out.println(figureName);
+        System.out.println("Информация по шару: " + r + "\n" + "Площадь: " + this.calcArea());
     }
 
 }

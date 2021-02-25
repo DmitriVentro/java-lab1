@@ -2,7 +2,8 @@ package Geometry2D;
 
 public class Triange implements Figure {
     private Double a, b, c;
-    public Triange(Double...sides) {
+    public String figureName = "Треугольник";
+    public Triange(Double... sides) {
         a = sides[0];
         b = sides[1];
         c = sides[2];
@@ -16,6 +17,8 @@ public class Triange implements Figure {
 
     @Override
     public void showInformation() {
-        System.out.println("Стороны:\n" + a + "\n" + b + "\n" + c + "\n" + "Площадь: " + this.calcArea());
+        System.out.println(figureName);
+        System.out.println("Стороны:\n" + a.intValue() + "\n" + b.intValue() + "\n" + c.intValue() + "\n" + "Площадь: "
+                + (this.calcArea()).intValue());
     }
 }

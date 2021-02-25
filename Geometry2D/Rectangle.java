@@ -1,28 +1,23 @@
 package Geometry2D;
 
-import java.util.Scanner;
-
 public class Rectangle implements Figure {
-    private Double a, b, area;
-    Scanner scanner = new Scanner(System.in);
+    private Double a, b;
+    public String figureName = "Прямоугольник";
 
-    public Rectangle() {
-        System.out.println("Введите стороны прямоугольника:\n");
-        while (a < 0 || b < 0) {
-            a = scanner.nextDouble();
-            b = scanner.nextDouble();
-        }
+    public Rectangle(Double...sides) {
+        a = sides[0];
+        a = sides[1];
     }
 
     @Override
     public Double calcArea() {
-        area = a * b;
-        return area;
+        return a * b;
     }
 
     @Override
     public void showInformation() {
-        System.out.println("Стороны прямоугольника: " + a + ' ' + b + '\n' + "Площадь: " + area);
+        System.out.println(figureName);
+        System.out.println("Стороны прямоугольника: " + a + ' ' + b + '\n' + "Площадь: " + this.calcArea());
     }
 
 }
