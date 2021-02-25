@@ -2,9 +2,10 @@ package Geometry2D;
 
 public class Rectangle implements Figure {
     private Double a, b;
+
     public String figureName = "Прямоугольник";
 
-    public Rectangle(Double...sides) {
+    public Rectangle(Double... sides) {
         a = sides[0];
         b = sides[1];
     }
@@ -16,8 +17,8 @@ public class Rectangle implements Figure {
 
     @Override
     public void showInformation() {
-        System.out.println(figureName);
-        System.out.println("Стороны прямоугольника: " + a + ' ' + b + '\n' + "Площадь: " + this.calcArea());
+        System.out.println(
+                "\n" + figureName + "\nСтороны прямоугольника: " + a + '\n' + b + '\n' + "Площадь: " + this.calcArea());
     }
 
 }

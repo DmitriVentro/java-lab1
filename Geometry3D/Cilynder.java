@@ -14,7 +14,6 @@ public class Cilynder implements Figure {
     }
 
     public void showInformation() {
-        System.out.println(figureName);
-        System.out.println("\nПлощадь:\n" + this.calcArea());
+        System.out.println("\n" + figureName + "\nПлощадь:\n" + this.calcArea() + "\n");
     }
 }

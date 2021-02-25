@@ -6,11 +6,6 @@ import Geometry3D.*;
  * Test
  */
 public class Test {
-    public static Figure menu(Figure myFigure) {
-
-        return myFigure;
-    }
-
     public static void main(String...strings) {
         Scanner scanner = new Scanner(System.in);
         Integer choice;
