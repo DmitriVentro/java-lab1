@@ -5,5 +5,5 @@ package Geometry2D;
  */
 public interface Figure {
     public void showInformation();
-    public void calcArea();
+    public Double calcArea();
 }   

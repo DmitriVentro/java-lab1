@@ -1,19 +1,21 @@
 package Geometry2D;
-import java.util.Scanner;
 
-public class Circle implements Figure{
-    Scanner scanner = new Scanner(System.in);
-    private Double r;
-    public Circle() {
-        System.out.println("Введите радиус:\n");
-        r = scanner.nextDouble();
+public class Circle implements Figure {
+    private Double r, area;
+
+    public Circle(Double radius) {
+        r = radius;
     }
+
     @Override
-    public void calcArea() {
+    public Double calcArea() {
+        area = Math.PI * r * r;
+        return area;
     }
+
     @Override
     public void showInformation() {
-        System.out.println("Информация по шару: " + r);
+        System.out.println("Информация по шару: " + r + "\n" + "Площадь: " + area);
     }
-    
+
 }
