@@ -1,10 +1,9 @@
 package Shape;
+
 import java.util.Scanner;
 import Geometry2D.*;
 import Geometry3D.*;
-/**
- * Test
- */
+
 public class Test {
     public static void main(String...strings) {
         Scanner scanner = new Scanner(System.in);
