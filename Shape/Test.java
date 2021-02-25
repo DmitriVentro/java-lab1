@@ -1,12 +1,10 @@
-
+package Shape;
+import java.util.Scanner;
+import Geometry2D.*;
+import Geometry3D.*;
 /**
  * Test
  */
-import java.util.Scanner;
-
-import Geometry2D.*;
-import Geometry3D.*;
-
 public class Test {
     public static Figure menu(Figure myFigure) {
 
@@ -23,19 +21,17 @@ public class Test {
             choice = scanner.nextInt();
             if (choice == 1) {
                 F = new Circle(10.0);
-                boolChoice = false;
             } else if (choice == 2) {
                 F = new Rectangle(3.0, 5.0);
-                boolChoice = false;
             } else if (choice == 3) {
                 F = new Triange(3.0, 4.0, 5.0);
+            } else if (choice == 0){
                 boolChoice = false;
-            } else
-                boolChoice = false;
-
+                scanner.close();
+            }
+            Cilynder c = new Cilynder(F, 10.5);
+            c.showInformation();
         }
-
-        Cilynder c = new Cilynder(F, 10.5);
-        c.showInformation();
+        scanner.close();
     }
 }

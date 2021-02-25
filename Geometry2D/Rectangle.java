@@ -6,7 +6,7 @@ public class Rectangle implements Figure {
 
     public Rectangle(Double...sides) {
         a = sides[0];
-        a = sides[1];
+        b = sides[1];
     }
 
     @Override
