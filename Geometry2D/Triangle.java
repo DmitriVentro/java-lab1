@@ -1,11 +1,13 @@
 package Geometry2D;
-
-public class Triange implements Figure {
+/**
+ * Triangle
+ */
+public class Triangle implements Figure {
     private Double a, b, c;
-    
+
     public String figureName = "Треугольник";
 
-    public Triange(Double... sides) {
+    public Triangle(Double... sides) {
         a = sides[0];
         b = sides[1];
         c = sides[2];

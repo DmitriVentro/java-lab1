@@ -18,7 +18,7 @@ public class Test {
             } else if (choice == 2) {
                 F = new Rectangle(3.0, 5.0);
             } else if (choice == 3) {
-                F = new Triange(3.0, 4.0, 5.0);
+                F = new Triangle(3.0, 4.0, 5.0); 
             } else if (choice == 0){
                 boolChoice = false;
                 scanner.close();

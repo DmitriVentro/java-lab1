@@ -1,6 +1,6 @@
 package Geometry3D;
 import Geometry2D.*;
-public class Cilynder implements Figure {
+public class Cilynder {
     Figure F;
     Double h;
     public String figureName = "Цилиндр";
@@ -9,11 +9,11 @@ public class Cilynder implements Figure {
         h = height;
     }
 
-    public Double calcArea() {
+    public Double volume() {
         return F.calcArea() * h;
     }
 
     public void showInformation() {
-        System.out.println("\n" + figureName + "\nПлощадь:\n" + this.calcArea() + "\n");
+        System.out.println("\n" + figureName + "\nПлощадь:\n" + this.volume() + "\n");
     }
 }
