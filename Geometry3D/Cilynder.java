@@ -14,6 +14,6 @@ public class Cilynder {
     }
 
     public void showInformation() {
-        System.out.println("\n" + figureName + "\nПлощадь:\n" + this.volume() + "\n");
+        System.out.println("\n" + F.getName() + "\nПлощадь:\n" + this.volume() + "\n");
     }
 }

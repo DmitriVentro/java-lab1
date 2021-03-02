@@ -25,4 +25,8 @@ public class Triangle implements Figure {
         System.out.println("\n" + figureName + "\nСтороны:\n" + a.intValue() + "\n" + b.intValue() + "\n" + c.intValue()
                 + "\n" + "Площадь: " + (this.calcArea()).intValue());
     }
+    @Override
+    public String getName() {
+        return figureName;
+    }
 }

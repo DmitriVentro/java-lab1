@@ -21,4 +21,8 @@ public class Rectangle implements Figure {
                 "\n" + figureName + "\nСтороны прямоугольника: " + a + '\n' + b + '\n' + "Площадь: " + this.calcArea());
     }
 
+    @Override
+    public String getName() {
+        return figureName;
+    }
 }
